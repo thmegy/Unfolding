@@ -1,0 +1,20 @@
+// NP names that match one of the search patterns in a given group are added to the group
+
+'syst_groups': {
+    'signal_modelling': [
+	'ttbar_MCNLO'
+	'ttbar_PowH7'
+	'ttbar_PowPy8_3hdamp'
+	'ttbar_PowPy8_atlfast'
+    ],
+    'weight_syst':[
+	'weight'
+    ],
+    'Background': [
+        'singletop'
+        'Wjets'
+        'diboson'
+        'Zjets'
+        'fakes'
+    ]
+}

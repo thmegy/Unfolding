@@ -1,0 +1,64 @@
+{
+
+
+    binning : [
+//	[ -1.0, -0.7, -0.45, -0.2, 0.0, 0.2, 0.45, 0.7, 1.0 ]
+//	[ -1.0, -0.55, -0.2, 0.0, 0.2, 0.55, 1.0]
+	[-1, -0.5, 0, 0.5, 1]
+//	[-1, -0.5, 0, 0.5, 1]
+//	[-1, -0.5, 0, 0.5, 1]
+	[-1, 1]
+    ]
+
+
+    nbin_input : 40 // needed for binning optimisation
+
+
+    // list of histograms to rebin (truth is hardcoded)
+    histo_1D : [
+	'mcdata'
+	'mcdata_rw0'
+	'mcdata_rw1'
+	'mcdata_rw2'
+	'mcdata_rw3'
+	'mcdata_rw4'
+	'truth_rw0'
+	'truth_rw1'
+	'truth_rw2'
+	'truth_rw3'
+	'truth_rw4'
+    ]
+
+
+    // control block
+    is_control : true
+    control_channels : {
+	'ee' : 'PTttbar',
+	'mm' : 'PTttbar'
+    }
+    control_variable_unit : 'GeV'
+    control_variable_bounds :{
+        'Mttbar' : [340, 1200],
+        'PTttbar' : [0, 300]
+    }
+    nbin_control : 20 // rebin from nbin_input to nbin_control
+
+
+    // differential measurement block
+    differential_measurement : true
+    diff_variable : 'Mttbar'
+    diff_variable_unit : 'GeV'
+    diff_bins : [
+	['0', '400']
+	['400']
+//	['400', '600']
+//	['600']
+    ]
+
+
+    // bootstrapping block
+    bootstrap: false
+    bootstrap_name: 'bootstrap'
+    n_bootstrap: 1000
+
+}

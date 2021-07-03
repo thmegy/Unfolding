@@ -1,0 +1,211 @@
+
+{
+    // General settings
+    lumi :{
+	mc16a: [36, 36207.66] // [value to print in plot, value to use in calculation]
+	mc16d: [44, 44307.4]
+	mc16e: [58, 58450.1]
+	all: [139, 138965.16]
+    }
+    
+    background:[
+	'diboson'
+	'singletop'
+	'fakes'
+	'Wjets'
+	'Zjets'
+    ]
+    
+    bkgcolour:{
+	diboson : 2
+	singletop : 4
+	fakes : 5
+	Wjets : 6
+	Zjets : 7
+    }
+    
+    migration_matrix_name : 'migmat'
+    response_matrix_name : 'resmat'
+    
+    // rebinning settings
+    rebin : 'config/example/rebin_config.json'
+    
+    
+    // labels
+    labels : 'config/labels.json'
+    
+    
+    // list of systematics to be included
+    onesided_syst:{
+	ttbar:[
+	    ttbar_MCNLO
+	    ttbar_PowH7
+	    ttbar_PowPy8_3hdamp
+	]
+    }
+    twosided_syst:{
+	all:[
+	    ['weight_pileup_UP', 'weight_pileup_DOWN']
+	    ['weight_leptonSF_EL_SF_Trigger_UP', 'weight_leptonSF_EL_SF_Trigger_DOWN']
+	    ['weight_leptonSF_EL_SF_Reco_UP', 'weight_leptonSF_EL_SF_Reco_DOWN']
+	    ['weight_leptonSF_EL_SF_ID_UP', 'weight_leptonSF_EL_SF_ID_DOWN']
+	    ['weight_leptonSF_EL_SF_Isol_UP', 'weight_leptonSF_EL_SF_Isol_DOWN']
+	    ['weight_leptonSF_MU_SF_Trigger_STAT_UP', 'weight_leptonSF_MU_SF_Trigger_STAT_DOWN']
+	    ['weight_leptonSF_MU_SF_Trigger_SYST_UP', 'weight_leptonSF_MU_SF_Trigger_SYST_DOWN']
+	    ['weight_leptonSF_MU_SF_ID_STAT_UP', 'weight_leptonSF_MU_SF_ID_STAT_DOWN']
+	    ['weight_leptonSF_MU_SF_ID_SYST_UP', 'weight_leptonSF_MU_SF_ID_SYST_DOWN']
+	    ['weight_leptonSF_MU_SF_ID_STAT_LOWPT_UP', 'weight_leptonSF_MU_SF_ID_STAT_LOWPT_DOWN']
+	    ['weight_leptonSF_MU_SF_ID_SYST_LOWPT_UP', 'weight_leptonSF_MU_SF_ID_SYST_LOWPT_DOWN']
+	    ['weight_leptonSF_MU_SF_Isol_STAT_UP', 'weight_leptonSF_MU_SF_Isol_STAT_DOWN']
+	    ['weight_leptonSF_MU_SF_Isol_SYST_UP', 'weight_leptonSF_MU_SF_Isol_SYST_DOWN']
+	    ['weight_leptonSF_MU_SF_TTVA_STAT_UP', 'weight_leptonSF_MU_SF_TTVA_STAT_DOWN']
+	    ['weight_leptonSF_MU_SF_TTVA_SYST_UP', 'weight_leptonSF_MU_SF_TTVA_SYST_DOWN']
+	    ['weight_globalLeptonTriggerSF_EL_Trigger_UP', 'weight_globalLeptonTriggerSF_EL_Trigger_DOWN']
+	    ['weight_globalLeptonTriggerSF_MU_Trigger_STAT_UP', 'weight_globalLeptonTriggerSF_MU_Trigger_STAT_DOWN']
+	    ['weight_globalLeptonTriggerSF_MU_Trigger_SYST_UP', 'weight_globalLeptonTriggerSF_MU_Trigger_SYST_DOWN']
+	    ['weight_bTagSF_MV2c10_77_eigenvars_B_up', 'weight_bTagSF_MV2c10_77_eigenvars_B_down']
+	    ['weight_bTagSF_MV2c10_77_eigenvars_C_up', 'weight_bTagSF_MV2c10_77_eigenvars_C_down']
+	    ['weight_bTagSF_MV2c10_77_eigenvars_Light_up', 'weight_bTagSF_MV2c10_77_eigenvars_Light_down']
+	    ['weight_bTagSF_MV2c10_77_extrapolation_up', 'weight_bTagSF_MV2c10_77_extrapolation_down']
+	    ['weight_bTagSF_MV2c10_77_extrapolation_from_charm_up', 'weight_bTagSF_MV2c10_77_extrapolation_from_charm_down']
+	]
+//	ttbar:[
+//	    ['CategoryReduction_JET_BJES_Response__1up', 'CategoryReduction_JET_BJES_Response__1down']
+//	    ['CategoryReduction_JET_EffectiveNP_Detector1__1up', 'CategoryReduction_JET_EffectiveNP_Detector1__1down']
+//	    ['CategoryReduction_JET_EffectiveNP_Detector2__1up', 'CategoryReduction_JET_EffectiveNP_Detector2__1down']
+//	    ['CategoryReduction_JET_EffectiveNP_Mixed1__1up', 'CategoryReduction_JET_EffectiveNP_Mixed1__1down']
+//	    ['CategoryReduction_JET_EffectiveNP_Mixed2__1up', 'CategoryReduction_JET_EffectiveNP_Mixed2__1down']
+//	    ['CategoryReduction_JET_EffectiveNP_Mixed3__1up', 'CategoryReduction_JET_EffectiveNP_Mixed3__1down']
+//	    ['CategoryReduction_JET_EffectiveNP_Modelling1__1up', 'CategoryReduction_JET_EffectiveNP_Modelling1__1down']
+//	    ['CategoryReduction_JET_EffectiveNP_Modelling2__1up', 'CategoryReduction_JET_EffectiveNP_Modelling2__1down']
+//	    ['CategoryReduction_JET_EffectiveNP_Modelling3__1up', 'CategoryReduction_JET_EffectiveNP_Modelling3__1down']
+//	    ['CategoryReduction_JET_EffectiveNP_Modelling4__1up', 'CategoryReduction_JET_EffectiveNP_Modelling4__1down']
+//	    ['CategoryReduction_JET_EffectiveNP_Statistical1__1up', 'CategoryReduction_JET_EffectiveNP_Statistical1__1down']
+//	    ['CategoryReduction_JET_EffectiveNP_Statistical2__1up', 'CategoryReduction_JET_EffectiveNP_Statistical2__1down']
+//	    ['CategoryReduction_JET_EffectiveNP_Statistical3__1up', 'CategoryReduction_JET_EffectiveNP_Statistical3__1down']
+//	    ['CategoryReduction_JET_EffectiveNP_Statistical4__1up', 'CategoryReduction_JET_EffectiveNP_Statistical4__1down']
+//	    ['CategoryReduction_JET_EffectiveNP_Statistical5__1up', 'CategoryReduction_JET_EffectiveNP_Statistical5__1down']
+//	    ['CategoryReduction_JET_EffectiveNP_Statistical6__1up', 'CategoryReduction_JET_EffectiveNP_Statistical6__1down']
+//	    ['CategoryReduction_JET_EtaIntercalibration_Modelling__1up', 'CategoryReduction_JET_EtaIntercalibration_Modelling__1down']
+//	    ['CategoryReduction_JET_EtaIntercalibration_NonClosure_2018data__1up', 'CategoryReduction_JET_EtaIntercalibration_NonClosure_2018data__1down']
+//	    ['CategoryReduction_JET_EtaIntercalibration_NonClosure_highE__1up', 'CategoryReduction_JET_EtaIntercalibration_NonClosure_highE__1down']
+//	    ['CategoryReduction_JET_EtaIntercalibration_NonClosure_negEta__1up', 'CategoryReduction_JET_EtaIntercalibration_NonClosure_negEta__1down']
+//	    ['CategoryReduction_JET_EtaIntercalibration_NonClosure_posEta__1up', 'CategoryReduction_JET_EtaIntercalibration_NonClosure_posEta__1down']
+//	    ['CategoryReduction_JET_EtaIntercalibration_TotalStat__1up', 'CategoryReduction_JET_EtaIntercalibration_TotalStat__1down']
+//	    ['CategoryReduction_JET_Flavor_Composition__1up', 'CategoryReduction_JET_Flavor_Composition__1down']
+//	    ['CategoryReduction_JET_Flavor_Response__1up', 'CategoryReduction_JET_Flavor_Response__1down']
+//	    ['CategoryReduction_JET_JER_DataVsMC_MC16__1up', 'CategoryReduction_JET_JER_DataVsMC_MC16__1down']
+//	    ['CategoryReduction_JET_JER_EffectiveNP_1__1up', 'CategoryReduction_JET_JER_EffectiveNP_1__1down']
+//	    ['CategoryReduction_JET_JER_EffectiveNP_2__1up', 'CategoryReduction_JET_JER_EffectiveNP_2__1down']
+//	    ['CategoryReduction_JET_JER_EffectiveNP_3__1up', 'CategoryReduction_JET_JER_EffectiveNP_3__1down']
+//	    ['CategoryReduction_JET_JER_EffectiveNP_4__1up', 'CategoryReduction_JET_JER_EffectiveNP_4__1down']
+//	    ['CategoryReduction_JET_JER_EffectiveNP_5__1up', 'CategoryReduction_JET_JER_EffectiveNP_5__1down']
+//	    ['CategoryReduction_JET_JER_EffectiveNP_6__1up', 'CategoryReduction_JET_JER_EffectiveNP_6__1down']
+//	    ['CategoryReduction_JET_JER_EffectiveNP_7restTerm__1up', 'CategoryReduction_JET_JER_EffectiveNP_7restTerm__1down']
+//	    ['CategoryReduction_JET_Pileup_OffsetMu__1up', 'CategoryReduction_JET_Pileup_OffsetMu__1down']
+//	    ['CategoryReduction_JET_Pileup_OffsetNPV__1up', 'CategoryReduction_JET_Pileup_OffsetNPV__1down']
+//	    ['CategoryReduction_JET_Pileup_PtTerm__1up', 'CategoryReduction_JET_Pileup_PtTerm__1down']
+//	    ['CategoryReduction_JET_Pileup_RhoTopology__1up', 'CategoryReduction_JET_Pileup_RhoTopology__1down']
+//	    ['CategoryReduction_JET_PunchThrough_MC16__1up', 'CategoryReduction_JET_PunchThrough_MC16__1down']
+//	    ['CategoryReduction_JET_SingleParticle_HighPt__1up', 'CategoryReduction_JET_SingleParticle_HighPt__1down']
+//	]
+    }
+
+
+
+    // reference samples to be used for systematics, if different from nominal (process : {syst : reference sample})
+    reference:{
+	ttbar:{
+	    ttbar_MCNLO : ttbar_PowPy8_atlfast
+	    ttbar_PowH7 : ttbar_PowPy8_atlfast
+	    ttbar_PowPy8_3hdamp : ttbar_PowPy8_atlfast
+	}
+    }
+
+		
+		
+    // factor to get spin parameter from mean of unfolded distribution
+    factor:{
+	'CosThetaKplus' : 3
+	'CosThetaNplus' : 3
+	'CosThetaRplus' : 3
+	'CosThetaKminus' : 3
+	'CosThetaNminus' : 3
+	'CosThetaRminus' : 3
+	'CorrKK' : -9
+	'CorrNN' : -9
+	'CorrRR' : -9
+	'CorrRKplus' : -9
+	'CorrRKminus' : -9
+	'CorrNRplus' : -9
+	'CorrNRminus' : -9
+	'CorrNKplus' : -9
+	'CorrNKminus' : -9
+	'Phi' : -3
+    }
+
+
+    // observables to measure significance for, and parameter value for the null hypothesis
+    significance:{
+	'Phi' : -0.3333333
+    }
+    
+    
+    // options for TRExFitter config file
+    job:{
+	CmeLabel : 13 TeV
+	ReadFrom : HIST
+	DebugLevel : 1
+	SystControlPlots : TRUE
+//	MCstatThreshold : NONE
+	LegendNColumns : 1
+	LegendX1 : 0.6
+	SystDataPlots	: TRUE
+	ImageFormat : pdf
+	SystPruningShape: 0.01
+	SystPruningNorm: 0.01
+	//StatOnly : TRUE
+    }
+    fit:{
+	FitType : UNFOLDING
+	FitRegion : CRSR
+//	UseMinos : all
+//	doLHscan : param_0
+//	LHscanMin: 0.05
+//	LHscanMax: 0.2
+//	LHscanSteps: 10
+    }
+    unfolding:{
+	MatrixOrientation : TRUTHONVERTICAL
+	TruthDistributionName : truth
+	TitleY : Events
+	RatioYmax : 2.0
+	RatioYmin : 0.3
+	NominalTruthSample : PP8
+    }
+    truthsample:{
+	Title : Powheg+Pythia 8
+	LineColor : 2
+    }
+    region:{
+	Type : SIGNAL
+    }
+    datasample:{
+	Title : Data
+	Type : DATA
+	UseSystematics : FALSE
+	UseMCstat : FALSE
+    }
+    unfoldingsample:{
+	Title : ttbar
+	FillColor : 3
+	LineColor : 3
+//	Gammas : DISABLED
+    }
+    bkgsample:{
+	Type : BACKGROUND
+	LineColor : 1
+	UseMCstat : TRUE
+    }
+    
+}

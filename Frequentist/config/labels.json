@@ -1,0 +1,163 @@
+{
+    'observables' : {
+	'CosThetaKplus' : '$cos\\theta_{\\plus}^{k}$'
+	'CosThetaNplus' : '$cos\\theta_{\\plus}^{n}$'
+	'CosThetaRplus' : '$cos\\theta_{\\plus}^{r}$'
+	'CosThetaKminus' : '$cos\\theta_{\\minus}^{k}$'
+	'CosThetaNminus' : '$cos\\theta_{\\minus}^{n}$'
+	'CosThetaRminus' : '$cos\\theta_{\\minus}^{r}$'
+	'CorrKK' : '$cos\\theta_{\\plus}^{k} cos\\theta_{\\minus}^{k}$'
+	'CorrNN' : '$cos\\theta_{\\plus}^{n} cos\\theta_{\\minus}^{n}$'
+	'CorrRR' : '$cos\\theta_{\\plus}^{r} cos\\theta_{\\minus}^{r}$'
+	'CorrNKplus' : '$cos\\theta_{\\plus}^{n} cos\\theta_{\\minus}^{k} + cos\\theta_{\\plus}^{k} cos\\theta_{\\minus}^{n}$'
+	'CorrNKminus' : '$cos\\theta_{\\plus}^{n} cos\\theta_{\\minus}^{k} - cos\\theta_{\\plus}^{k} cos\\theta_{\\minus}^{n}$'
+	'CorrNRplus' : '$cos\\theta_{\\plus}^{n} cos\\theta_{\\minus}^{r} + cos\\theta_{\\plus}^{r} cos\\theta_{\\minus}^{n}$'
+	'CorrNRminus' : '$cos\\theta_{\\plus}^{n} cos\\theta_{\\minus}^{r} - cos\\theta_{\\plus}^{r} cos\\theta_{\\minus}^{n}$'
+	'CorrRKplus' : '$cos\\theta_{\\plus}^{r} cos\\theta_{\\minus}^{k} + cos\\theta_{\\plus}^{k} cos\\theta_{\\minus}^{r}$'
+	'CorrRKminus' : '$cos\\theta_{\\plus}^{r} cos\\theta_{\\minus}^{k} - cos\\theta_{\\plus}^{k} cos\\theta_{\\minus}^{r}$'
+	'Phi' : '$\\varphi_{\\ell\\ell}$'
+
+	'CosThetaNplus_CosThetaNminus' : '$cos\\theta_{\\plus}^{n}$ vs $cos\\theta_{\\minus}^{n}$'
+	'CosThetaNplus_CorrKK' : '$cos\\theta_{\\plus}^{n}$ vs $cos\\theta_{\\plus}^{k} cos\\theta_{\\minus}^{k}$'
+	'CosThetaNminus_CorrKK' : '$cos\\theta_{\\minus}^{n}$ vs $cos\\theta_{\\plus}^{k} cos\\theta_{\\minus}^{k}$'
+	'CorrRKplus_CorrKK' : '$cos\\theta_{\\plus}^{r} cos\\theta_{\\minus}^{k} + cos\\theta_{\\plus}^{k} cos\\theta_{\\minus}^{r} vs $cos\\theta_{\\plus}^{k} cos\\theta_{\\minus}^{k}$'
+	'CorrRKplus_CosThetaNplus' : '$cos\\theta_{\\plus}^{r} cos\\theta_{\\minus}^{k} + cos\\theta_{\\plus}^{k}$ cos\\theta_{\\minus}^{r} vs $cos\\theta_{\\plus}^{n}$'
+	'CorrNN_CorrKK' : '$cos\\theta_{\\plus}^{n} cos\\theta_{\\minus}^{n}$ vs $cos\\theta_{\\plus}^{k} cos\\theta_{\\minus}^{k}$'
+	'CorrKK_CorrRKminus' : '$cos\\theta_{\\plus}^{k} cos\\theta_{\\minus}^{k}$ vs $cos\\theta_{\\plus}^{r} cos\\theta_{\\minus}^{k} - cos\\theta_{\\plus}^{k} cos\\theta_{\\minus}^{r}$'
+	'CorrKK_CorrNKplus' : '$cos\\theta_{\\plus}^{k} cos\\theta_{\\minus}^{k}$ vs $cos\\theta_{\\plus}^{n} cos\\theta_{\\minus}^{k} + cos\\theta_{\\plus}^{k} cos\\theta_{\\minus}^{n}$'
+	'CorrKK_CorrNKminus' : '$cos\\theta_{\\plus}^{k} cos\\theta_{\\minus}^{k}$ vs $cos\\theta_{\\plus}^{n} cos\\theta_{\\minus}^{k} - cos\\theta_{\\plus}^{k} cos\\theta_{\\minus}^{n}$'
+	'CorrRKplus_CosThetaKplus' : '$cos\\theta_{\\plus}^{r} cos\\theta_{\\minus}^{k} + cos\\theta_{\\plus}^{k} cos\\theta_{\\minus}^{r} vs $cos\\theta_{\\plus}^{k}$'
+	'CorrRKplus_CosThetaRplus' : '$cos\\theta_{\\plus}^{r} cos\\theta_{\\minus}^{k} + cos\\theta_{\\plus}^{k} cos\\theta_{\\minus}^{r} vs $cos\\theta_{\\plus}^{r}$'
+    }
+
+    
+    'parameters' : {
+	'CosThetaKplus' : '$B^k_+$'
+	'CosThetaNplus' : '$B^n_+$'
+	'CosThetaRplus' : '$B^r_+$'
+	'CosThetaKminus' : '$B^k_-$'
+	'CosThetaNminus' : '$B^n_-$'
+	'CosThetaRminus' : '$B^r_-$'
+	'CorrKK' : '$C(k,k)$'
+	'CorrNN' : '$C(n,n)$'
+	'CorrRR' : '$C(r,r)$'
+	'CorrNKplus' : '$C(n,k)+C(k,n)$'
+	'CorrNKminus' : '$C(n,k)-C(k,n)$'
+	'CorrNRplus' : '$C(n,r)+C(r,n)$'
+	'CorrNRminus' : '$C(n,r)-C(r,n)$'
+	'CorrRKplus' : '$C(r,k)+C(k,r)$'
+	'CorrRKminus' : '$C(r,k)-C(k,r)$'
+	'Phi' : '$D$'
+    }
+    
+    
+    'regions' : {
+	'em' : '$e\\mu$'
+	'ee' : '$ee$'
+	'mm' : '$\\mu\\mu$'
+	'1btag' : '1 b-tag'
+	'2btag' : '2 b-tag'
+    }
+
+
+    'differential_variables' : {
+	'Mttbar' : 'm$_{t\\bar{t}}$'
+	'PTttbar' : 'p$_T^{t\\bar{t}}$'
+    }
+
+    
+    'NP_names': {
+	'ttbar_MCNLO': 'MCNLO'
+	'ttbar_PowH7': 'PowH7'
+	'ttbar_PowPy8_3hdamp': '3hdamp'
+
+	'weight_pileup': 'Pile-up'
+	'weight_leptonSF_EL_SF_Trigger': 'Electron trigger eff.'
+	'weight_leptonSF_EL_SF_SIMPLIFIED_Reco': 'Electron reco eff.'
+	'weight_leptonSF_EL_SF_SIMPLIFIED_ID': 'Electron ID eff.'
+	'weight_leptonSF_EL_SF_SIMPLIFIED_Iso': 'Electron isolation eff.'
+	'weight_leptonSF_MU_SF_Trigger_STAT': 'Muon trigger eff. (stat.)'
+	'weight_leptonSF_MU_SF_Trigger_SYST': 'Muon trigger eff. (syst.)'
+	'weight_leptonSF_MU_SF_ID_STAT': 'Muon ID eff. (stat.)'
+	'weight_leptonSF_MU_SF_ID_SYST': 'Muon ID eff. (syst.)'
+	'weight_leptonSF_MU_SF_ID_STAT_LOWPT': 'Muon ID eff. low p$_T$ (stat.)'
+	'weight_leptonSF_MU_SF_ID_SYST_LOWPT': 'Muon ID eff. low p$_T$ (syst.)'
+	'weight_leptonSF_MU_SF_Isol_STAT': 'Muon isolation eff. (stat.)'
+	'weight_leptonSF_MU_SF_Isol_SYST': 'Muon isolation eff. (syst.)'
+	'weight_leptonSF_MU_SF_TTVA_STAT': 'Muon TTVA eff. (stat.)'
+	'weight_leptonSF_MU_SF_TTVA_SYST': 'Muon TTVA eff. (syst.)'
+	'weight_globalLeptonTriggerSF_EL_Trigger': 'Electron global trigger eff.'
+	'weight_globalLeptonTriggerSF_MU_Trigger_STAT': 'Muon global trigger eff. (stat.)'
+	'weight_globalLeptonTriggerSF_MU_Trigger_SYST': 'Muon global trigger eff. (syst.)'
+	'weight_bTagSF_DL1r_77_eigenvars_C': '$b$-tagging $c$-eff.'
+	'weight_bTagSF_DL1r_77_eigenvars_B': '$b$-tagging $b$-eff.'
+	'weight_bTagSF_DL1r_77_eigenvars_Light': '$b$-tagging light-eff.'
+	'weight_bTagSF_DL1r_77_extrapolation': '$b$-tagging $b$-eff. high-$p_T$ extrap.'
+	'weight_bTagSF_DL1r_77_extrapolation_from_charm': '$b$-tagging $c$-eff. high-$p_T$ extrap.'
+
+	'CategoryReduction_JET_BJES_Response' : 'JES'
+	'CategoryReduction_JET_EffectiveNP_Detector1' : 'Jet detector 1'
+	'CategoryReduction_JET_EffectiveNP_Detector2' : 'Jet detector 2'
+	'CategoryReduction_JET_EffectiveNP_Mixed1' : 'Jet mixed 1'
+	'CategoryReduction_JET_EffectiveNP_Mixed2' : 'Jet mixed 2'
+	'CategoryReduction_JET_EffectiveNP_Mixed3' : 'Jet mixed 3'
+	'CategoryReduction_JET_EffectiveNP_Modelling1' : 'Jet modelling 1'
+	'CategoryReduction_JET_EffectiveNP_Modelling2' : 'Jet modelling 2'
+	'CategoryReduction_JET_EffectiveNP_Modelling3' : 'Jet modelling 3'
+	'CategoryReduction_JET_EffectiveNP_Modelling4' : 'Jet modelling 4'
+	'CategoryReduction_JET_EffectiveNP_Statistical1' : 'Jet statistical 1'
+	'CategoryReduction_JET_EffectiveNP_Statistical2' : 'Jet statistical 2'
+	'CategoryReduction_JET_EffectiveNP_Statistical3' : 'Jet statistical 3'
+	'CategoryReduction_JET_EffectiveNP_Statistical4' : 'Jet statistical 4'
+	'CategoryReduction_JET_EffectiveNP_Statistical5' : 'Jet statistical 5'
+	'CategoryReduction_JET_EffectiveNP_Statistical6' : 'Jet statistical 6'
+	'CategoryReduction_JET_EtaIntercalibration_Modelling' : 'Jet $\\eta$-intercalibration modelling'
+	'CategoryReduction_JET_EtaIntercalibration_NonClosure_2018data' : 'Jet $\\eta$-intercalibration non-closure data'
+	'CategoryReduction_JET_EtaIntercalibration_NonClosure_highE' : 'Jet $\\eta$-intercalibration highE'
+	'CategoryReduction_JET_EtaIntercalibration_NonClosure_negEta' : 'Jet $\\eta$-intercalibration ($\\eta<0$)'
+	'CategoryReduction_JET_EtaIntercalibration_NonClosure_posEta' : 'Jet $\\eta$-intercalibration ($\\eta>0$)'
+	'CategoryReduction_JET_EtaIntercalibration_TotalStat' : 'Jet $\\eta$-intercalibration stat.'
+	'CategoryReduction_JET_Flavor_Composition' : 'Jet flavor composition'
+	'CategoryReduction_JET_Flavor_Response' : 'Jet flavor response'
+	'CategoryReduction_JET_JER_DataVsMC_MC16' : 'JER data vs MC'
+	'CategoryReduction_JET_JER_EffectiveNP_1' : 'JER 1'
+	'CategoryReduction_JET_JER_EffectiveNP_2' : 'JER 2'
+	'CategoryReduction_JET_JER_EffectiveNP_3' : 'JER 3'
+	'CategoryReduction_JET_JER_EffectiveNP_4' : 'JER 4'
+	'CategoryReduction_JET_JER_EffectiveNP_5' : 'JER 5'
+	'CategoryReduction_JET_JER_EffectiveNP_6' : 'JER 6'
+	'CategoryReduction_JET_JER_EffectiveNP_7restTerm' : 'JER 7 (rest term)'
+	'CategoryReduction_JET_Pileup_OffsetMu' : 'Jet pileup OffsetMu'
+	'CategoryReduction_JET_Pileup_OffsetNPV' : 'Jet pileup OffsetNPV'
+	'CategoryReduction_JET_Pileup_PtTerm' : 'Jet pileup PtTerm'
+	'CategoryReduction_JET_Pileup_RhoTopology' : 'Jet pileup RhoTopology'
+	'CategoryReduction_JET_PunchThrough_MC16' : 'Jet punch-through'
+	'CategoryReduction_JET_SingleParticle_HighPt' : 'Jet single particle high-p$_T$'
+	'EG_RESOLUTION_ALL' : 'e/$\\gamma$ resolution'
+	'EG_SCALE_AF2' : 'e/$\\gamma$ resolution scale (AF2)'
+	'EG_SCALE_ALL' : 'e/$\\gamma$ resolution scale (all)'
+	'MET_SoftTrk_Scale' : 'MET soft-track scale'
+	'MUON_ID' : 'Muon ID'
+	'MUON_MS' : 'Muon MS'
+	'MUON_SAGITTA_RESBIAS' : 'Muon sagitta rest-bias'
+	'MUON_SAGITTA_RHO' : 'Muon sagitta $\\rho$'
+	'MUON_SCALE' : 'Muon scale'
+
+	'MET_SoftTrk_ResoPara' : 'MET soft-track res. para.'
+	'MET_SoftTrk_ResoPerp' : 'MET soft-track res. perp.'
+
+    }
+
+    
+    'group_breakdown_names': {
+	'signal_modelling' : '$t\\bar{t}$ modelling'
+	'jet_syst' : 'Jets'
+	'e_mu_syst' : 'Electrons and muons'
+	'pileup_syst' : 'Pile-up'
+	'met_syst' : '$E_T^{miss}$'
+	'stat' : 'Statistical uncert.'
+	'gammas': 'Background MC stat. (gammas)'
+    }
+    
+}
+

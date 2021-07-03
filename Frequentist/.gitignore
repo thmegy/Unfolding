@@ -2,7 +2,6 @@ unfoldingInput*
 architecture.txt
 plenv*
 *~
-config/*.config
 mc*
 binning_optimisation*
 scripts/__pycache__/
