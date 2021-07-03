@@ -1,0 +1,8 @@
+numpy
+uncertainties
+pyyaml
+scipy
+matplotlib
+iminuit
+hjson
+pandas

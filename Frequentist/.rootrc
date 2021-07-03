@@ -1,0 +1,4 @@
+# Default histogram precision for TTree::Draw(). It can be 'float"or "double"
+Hist.Precision.1D:           double
+Hist.Precision.2D:           double
+Hist.Precision.3D:           double
