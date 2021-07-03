@@ -1,0 +1,6 @@
+# Compute paths
+get_filename_component(CommonSmoothingTool_CMAKE_DIR "@CMAKE_CURRENT_LIST_FILE@" PATH)
+set(CommonSmoothingTool_FOUND 1)
+set(CommonSmoothingTool_INCLUDE_DIRS "@CONF_INCLUDE_DIRS@")
+set(CommonSmoothingTool_LIBRARIES "@CONF_LIBRARIES@")
+set(CommonSmoothingTool_LIBRARY_DIRS "@CONF_LIBRARY_DIRS@")

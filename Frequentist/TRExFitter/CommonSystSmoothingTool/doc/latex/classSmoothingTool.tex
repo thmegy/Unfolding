@@ -1,0 +1,148 @@
+\hypertarget{classSmoothingTool}{
+\section{SmoothingTool Class Reference}
+\label{classSmoothingTool}\index{SmoothingTool@{SmoothingTool}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classSmoothingTool_ab4ed389aff32080bc9849abb237cc58c}{addInputFileNom} (const string NomFileName, const string TdirName=\char`\"{}\char`\"{})
+\item 
+void \hyperlink{classSmoothingTool_acd749c135533838fa53bffc961241a90}{addInputFileSys} (const string SysFileName, const string TdirName=\char`\"{}\char`\"{})
+\item 
+void \hyperlink{classSmoothingTool_acebcdc9de5c01a9e5a4fae7253f4fa7b}{addOutputFileSys} (const string SysFileName)
+\item 
+void \hyperlink{classSmoothingTool_a044eda85524db01f38851c5a0c7e863f}{addHist} (string hnomName, vector$<$ string $>$ hsysNameList)
+\item 
+\hypertarget{classSmoothingTool_aa3959916f76f8c3360165beb9a09e70d}{
+void {\bfseries setSmoothingOption} (string sOption)}
+\label{classSmoothingTool_aa3959916f76f8c3360165beb9a09e70d}
+
+\item 
+void \hyperlink{classSmoothingTool_a28efec9f77ecd383a7a3209dfad43cf0}{skipHists} (vector$<$ string $>$ sList)
+\item 
+void \hyperlink{classSmoothingTool_a980fda8c4c47dac4db2347e51ec435cd}{generateList} (int FirstN=0)
+\item 
+void \hyperlink{classSmoothingTool_ae66c92826009ac6afe84a383ca74e4a7}{setKernelOption} (string kOption)
+\item 
+\hypertarget{classSmoothingTool_aaf9639c751730242a07ea1a8be48691f}{
+void {\bfseries setSmoothType} (string sType)}
+\label{classSmoothingTool_aaf9639c751730242a07ea1a8be48691f}
+
+\item 
+\hypertarget{classSmoothingTool_a858c6172836081a3f778e06f839f10dd}{
+void {\bfseries setSmoothedHistName} (string sName)}
+\label{classSmoothingTool_a858c6172836081a3f778e06f839f10dd}
+
+\item 
+\hypertarget{classSmoothingTool_a043705474445af954f5a884b2f9a8ec5}{
+void {\bfseries setSpans} (vector$<$ double $>$ sList)}
+\label{classSmoothingTool_a043705474445af954f5a884b2f9a8ec5}
+
+\item 
+\hypertarget{classSmoothingTool_aafe0b3cf6602e9adc0d4f6ad36f24374}{
+void {\bfseries useRalativeSpans} (bool rSpans=true)}
+\label{classSmoothingTool_aafe0b3cf6602e9adc0d4f6ad36f24374}
+
+\item 
+\hypertarget{classSmoothingTool_aaa5b6ec75c324a45e9e3403a628aaeee}{
+void {\bfseries setRebinFactor} (int RBF=-\/1)}
+\label{classSmoothingTool_aaa5b6ec75c324a45e9e3403a628aaeee}
+
+\item 
+\hypertarget{classSmoothingTool_ac3009c0453c5b3276cd634c4e1463091}{
+void {\bfseries setStatErrThreshold} (float rErrThreshold)}
+\label{classSmoothingTool_ac3009c0453c5b3276cd634c4e1463091}
+
+\item 
+\hypertarget{classSmoothingTool_a6ee9f5dd6e09c7310520bf94e3d3df90}{
+void {\bfseries setNmax} (int nOfMax=1)}
+\label{classSmoothingTool_a6ee9f5dd6e09c7310520bf94e3d3df90}
+
+\item 
+\hypertarget{classSmoothingTool_a6ecff0a4bcc75b24cadbe42d5983d418}{
+void {\bfseries setSmoothHist} (\hyperlink{classSmoothHist}{SmoothHist} \&sAlg)}
+\label{classSmoothingTool_a6ecff0a4bcc75b24cadbe42d5983d418}
+
+\item 
+\hypertarget{classSmoothingTool_ab34e43a308f8bfffce5bce7716e58e65}{
+bool {\bfseries skip} (string checkSkip)}
+\label{classSmoothingTool_ab34e43a308f8bfffce5bce7716e58e65}
+
+\item 
+\hypertarget{classSmoothingTool_a99a24dc241729b2c166541de4807ac4d}{
+bool {\bfseries runSmoothing} ()}
+\label{classSmoothingTool_a99a24dc241729b2c166541de4807ac4d}
+
+\item 
+\hypertarget{classSmoothingTool_afcc9937d9288f5a6fe282c6637bc7dab}{
+void {\bfseries makePlot} (bool oPlot=true)}
+\label{classSmoothingTool_afcc9937d9288f5a6fe282c6637bc7dab}
+
+\item 
+\hypertarget{classSmoothingTool_add13e2847998a45fcf15f7f4c6c135aa}{
+void {\bfseries normalizePlot} (bool normPlot=true)}
+\label{classSmoothingTool_add13e2847998a45fcf15f7f4c6c135aa}
+
+\item 
+\hypertarget{classSmoothingTool_a0952cc0f78d5765cb7e1853e0ba2983a}{
+void {\bfseries setRebinFactorPlot} (int rBinPlot)}
+\label{classSmoothingTool_a0952cc0f78d5765cb7e1853e0ba2983a}
+
+\item 
+\hypertarget{classSmoothingTool_acdd9debe76bd535dedb1d6f096be8b02}{
+void {\bfseries SetIndependentVar} (bool InVar=false)}
+\label{classSmoothingTool_acdd9debe76bd535dedb1d6f096be8b02}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classSmoothingTool_a044eda85524db01f38851c5a0c7e863f}{
+\index{SmoothingTool@{SmoothingTool}!addHist@{addHist}}
+\index{addHist@{addHist}!SmoothingTool@{SmoothingTool}}
+\subsubsection[{addHist}]{\setlength{\rightskip}{0pt plus 5cm}void SmoothingTool::addHist (string {\em hnomName}, \/  vector$<$ string $>$ {\em hsysNameList})}}
+\label{classSmoothingTool_a044eda85524db01f38851c5a0c7e863f}
+Add name of nominal hist and its corresponding systematics hsysNameList is a list of sytematics variations \{sys\_\-upName, sys\_\-downName, ...\} \hypertarget{classSmoothingTool_ab4ed389aff32080bc9849abb237cc58c}{
+\index{SmoothingTool@{SmoothingTool}!addInputFileNom@{addInputFileNom}}
+\index{addInputFileNom@{addInputFileNom}!SmoothingTool@{SmoothingTool}}
+\subsubsection[{addInputFileNom}]{\setlength{\rightskip}{0pt plus 5cm}void SmoothingTool::addInputFileNom (const string {\em NomFileName}, \/  const string {\em TdirName} = {\ttfamily \char`\"{}\char`\"{}})}}
+\label{classSmoothingTool_ab4ed389aff32080bc9849abb237cc58c}
+Add input root file for nominal histograms.\par
+ This fuction take a file name as an argument.\par
+ The second argument is name of a TDirectory. \hypertarget{classSmoothingTool_acd749c135533838fa53bffc961241a90}{
+\index{SmoothingTool@{SmoothingTool}!addInputFileSys@{addInputFileSys}}
+\index{addInputFileSys@{addInputFileSys}!SmoothingTool@{SmoothingTool}}
+\subsubsection[{addInputFileSys}]{\setlength{\rightskip}{0pt plus 5cm}void SmoothingTool::addInputFileSys (const string {\em SysFileName}, \/  const string {\em TdirName} = {\ttfamily \char`\"{}\char`\"{}})}}
+\label{classSmoothingTool_acd749c135533838fa53bffc961241a90}
+Add input root file for systematics histograms. This fuction take a file name as an argument.\par
+ The second argument is name of a TDirectory. \hypertarget{classSmoothingTool_acebcdc9de5c01a9e5a4fae7253f4fa7b}{
+\index{SmoothingTool@{SmoothingTool}!addOutputFileSys@{addOutputFileSys}}
+\index{addOutputFileSys@{addOutputFileSys}!SmoothingTool@{SmoothingTool}}
+\subsubsection[{addOutputFileSys}]{\setlength{\rightskip}{0pt plus 5cm}void SmoothingTool::addOutputFileSys (const string {\em SysFileName})}}
+\label{classSmoothingTool_acebcdc9de5c01a9e5a4fae7253f4fa7b}
+Set out put file: This file is a copy of input file + smoothed hists. Smoothed hists are at the same place as the original systematic hists. If you want to write smoothed hists to original file, don't call this fuction. \hypertarget{classSmoothingTool_a980fda8c4c47dac4db2347e51ec435cd}{
+\index{SmoothingTool@{SmoothingTool}!generateList@{generateList}}
+\index{generateList@{generateList}!SmoothingTool@{SmoothingTool}}
+\subsubsection[{generateList}]{\setlength{\rightskip}{0pt plus 5cm}void SmoothingTool::generateList (int {\em FirstN} = {\ttfamily 0})}}
+\label{classSmoothingTool_a980fda8c4c47dac4db2347e51ec435cd}
+Smooth only first N histograms.\par
+ This is very useful when you want to do some tests with small numbe of hists.\par
+ NOTE: ST.generateList() will tall all histograms except the hists in the skip list. \hypertarget{classSmoothingTool_ae66c92826009ac6afe84a383ca74e4a7}{
+\index{SmoothingTool@{SmoothingTool}!setKernelOption@{setKernelOption}}
+\index{setKernelOption@{setKernelOption}!SmoothingTool@{SmoothingTool}}
+\subsubsection[{setKernelOption}]{\setlength{\rightskip}{0pt plus 5cm}void SmoothingTool::setKernelOption (string {\em kOption})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classSmoothingTool_ae66c92826009ac6afe84a383ca74e4a7}
+There is two type of kernel:\par
+ 1) \char`\"{}box\char`\"{}: take average of of several bins.\par
+ 2) \char`\"{}normal\char`\"{}: normal gaussian kernel\par
+ \hypertarget{classSmoothingTool_a28efec9f77ecd383a7a3209dfad43cf0}{
+\index{SmoothingTool@{SmoothingTool}!skipHists@{skipHists}}
+\index{skipHists@{skipHists}!SmoothingTool@{SmoothingTool}}
+\subsubsection[{skipHists}]{\setlength{\rightskip}{0pt plus 5cm}void SmoothingTool::skipHists (vector$<$ string $>$ {\em sList})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classSmoothingTool_a28efec9f77ecd383a7a3209dfad43cf0}
+If some of the systematics should not be smoothed, add their name (or part of the names) to skip list 
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+SmoothSystematics/SmoothingTool.h\item 
+Root/SmoothingTool.cxx\end{DoxyCompactItemize}

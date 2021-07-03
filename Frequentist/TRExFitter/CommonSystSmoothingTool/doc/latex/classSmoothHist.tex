@@ -1,0 +1,115 @@
+\hypertarget{classSmoothHist}{
+\section{SmoothHist Class Reference}
+\label{classSmoothHist}\index{SmoothHist@{SmoothHist}}
+}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct {\bfseries Bin}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+TH1 $\ast$ \hyperlink{classSmoothHist_a72c5eb8c25359a8b6bcf9d2e6a03158a}{smoothHistogram} (TH1 $\ast$hnom, TH1 $\ast$hsys, bool smooth=true)
+\item 
+TH1 $\ast$ \hyperlink{classSmoothHist_af5f8c1ba0805aa4a6ec8ebb85573aa11}{smoothWithKernel} (TH1 $\ast$const hnom, TH1 $\ast$const hsys)
+\item 
+void \hyperlink{classSmoothHist_a400870adb6f812cfb5fcba450d645703}{setKernelOption} (std::string kOption)
+\item 
+void \hyperlink{classSmoothHist_afa0d953e55d55dc4216fe508c03b7c44}{setNmax} (int NumberOfMax=1)
+\item 
+void \hyperlink{classSmoothHist_abf903800d8531bb255bd4f90bba39add}{setSmoothType} (string sType)
+\item 
+void \hyperlink{classSmoothHist_a0f94bf39e2074d3726d322358296f8b9}{setSpans} (std::vector$<$ double $>$ sListOfSpans)
+\item 
+void \hyperlink{classSmoothHist_af8d7e0514a1abe58c503548c555134e7}{useRalativeSpans} (bool Rel=true)
+\item 
+void \hyperlink{classSmoothHist_a547095b0168773a9c913001f2426a7b2}{setRebinFactor} (int RebinF=-\/1)
+\item 
+void \hyperlink{classSmoothHist_afb5c5cf363ecd6ca1f908f14c2082e1b}{setStatErrThreshold} (float ErrFraction)
+\item 
+\hypertarget{classSmoothHist_a79c9f91f21670e5e06c92f9a074aeb87}{
+TH1 $\ast$ {\bfseries Smooth\_\-Ttres} (TH1 $\ast$hnom, TH1 $\ast$hsys, bool independentVar)}
+\label{classSmoothHist_a79c9f91f21670e5e06c92f9a074aeb87}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classSmoothHist_a400870adb6f812cfb5fcba450d645703}{
+\index{SmoothHist@{SmoothHist}!setKernelOption@{setKernelOption}}
+\index{setKernelOption@{setKernelOption}!SmoothHist@{SmoothHist}}
+\subsubsection[{setKernelOption}]{\setlength{\rightskip}{0pt plus 5cm}void SmoothHist::setKernelOption (std::string {\em kOption})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classSmoothHist_a400870adb6f812cfb5fcba450d645703}
+Set kernel fuction. kOption is s string.\par
+ There are two kernel fuction available: \char`\"{}box\char`\"{} and \char`\"{}normal\char`\"{}.\par
+ \char`\"{}box\char`\"{}-\/$>$ take average of several bins.\par
+ \char`\"{}normal\char`\"{}-\/$>$ Gaussian fuction.\par
+ \hypertarget{classSmoothHist_afa0d953e55d55dc4216fe508c03b7c44}{
+\index{SmoothHist@{SmoothHist}!setNmax@{setNmax}}
+\index{setNmax@{setNmax}!SmoothHist@{SmoothHist}}
+\subsubsection[{setNmax}]{\setlength{\rightskip}{0pt plus 5cm}void SmoothHist::setNmax (int {\em NumberOfMax} = {\ttfamily 1})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classSmoothHist_afa0d953e55d55dc4216fe508c03b7c44}
+Set max number of maximum extrema.\par
+ Here it set it to 1 (default). This means total number of extrema will be 3 (1 max extrema + 2 min extrema). \hypertarget{classSmoothHist_a547095b0168773a9c913001f2426a7b2}{
+\index{SmoothHist@{SmoothHist}!setRebinFactor@{setRebinFactor}}
+\index{setRebinFactor@{setRebinFactor}!SmoothHist@{SmoothHist}}
+\subsubsection[{setRebinFactor}]{\setlength{\rightskip}{0pt plus 5cm}void SmoothHist::setRebinFactor (int {\em RebinF} = {\ttfamily -\/1})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classSmoothHist_a547095b0168773a9c913001f2426a7b2}
+Rebin histograms befor smoothing.\par
+ -\/1 means dont rebin. WARNING: if you set this and use it in a loop over systematic hists you may rebin nominal histogram several times.\par
+ So do not use this if you don know what are you doing. \hypertarget{classSmoothHist_abf903800d8531bb255bd4f90bba39add}{
+\index{SmoothHist@{SmoothHist}!setSmoothType@{setSmoothType}}
+\index{setSmoothType@{setSmoothType}!SmoothHist@{SmoothHist}}
+\subsubsection[{setSmoothType}]{\setlength{\rightskip}{0pt plus 5cm}void SmoothHist::setSmoothType (string {\em sType})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classSmoothHist_abf903800d8531bb255bd4f90bba39add}
+This is apply to smoothing with kernel.\par
+ There are two ways to apply smoothing:\par
+ 1) smoothe the ratio: Sys/nominal.\par
+ 2) Smooth the delta: Sys-\/Nominal\par
+ \hypertarget{classSmoothHist_a0f94bf39e2074d3726d322358296f8b9}{
+\index{SmoothHist@{SmoothHist}!setSpans@{setSpans}}
+\index{setSpans@{setSpans}!SmoothHist@{SmoothHist}}
+\subsubsection[{setSpans}]{\setlength{\rightskip}{0pt plus 5cm}void SmoothHist::setSpans (std::vector$<$ double $>$ {\em sListOfSpans})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classSmoothHist_a0f94bf39e2074d3726d322358296f8b9}
+This is apply to smoothing with kernel.\par
+ This is a list of radii for kernel fuction.\par
+ If you dont know what to set then dont call this fuction.\par
+ The default list will be used. \hypertarget{classSmoothHist_afb5c5cf363ecd6ca1f908f14c2082e1b}{
+\index{SmoothHist@{SmoothHist}!setStatErrThreshold@{setStatErrThreshold}}
+\index{setStatErrThreshold@{setStatErrThreshold}!SmoothHist@{SmoothHist}}
+\subsubsection[{setStatErrThreshold}]{\setlength{\rightskip}{0pt plus 5cm}void SmoothHist::setStatErrThreshold (float {\em ErrFraction})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classSmoothHist_afb5c5cf363ecd6ca1f908f14c2082e1b}
+This applys to smoothing with kernel.\par
+ Set threshold for stat error.\par
+ if stat error of bins are larger then this threshold merge bins between two extrema untill number of extrema reach the value set by setNmax(N).\par
+ If total stat error of nominal hist larger then the threshold, skip smoothing will appy. \hypertarget{classSmoothHist_a72c5eb8c25359a8b6bcf9d2e6a03158a}{
+\index{SmoothHist@{SmoothHist}!smoothHistogram@{smoothHistogram}}
+\index{smoothHistogram@{smoothHistogram}!SmoothHist@{SmoothHist}}
+\subsubsection[{smoothHistogram}]{\setlength{\rightskip}{0pt plus 5cm}TH1 $\ast$ SmoothHist::smoothHistogram (TH1 $\ast$ {\em hnom}, \/  TH1 $\ast$ {\em hsys}, \/  bool {\em smooth} = {\ttfamily true})}}
+\label{classSmoothHist_a72c5eb8c25359a8b6bcf9d2e6a03158a}
+This method will merge bins based on stat$>$0.05 (default).\par
+ Better to clone sys hist. otherwise original hist might be modified.\par
+ hnom is pointer to nominal historgram.\par
+ hsys is a pointer to systematic histogram.\par
+ \hypertarget{classSmoothHist_af5f8c1ba0805aa4a6ec8ebb85573aa11}{
+\index{SmoothHist@{SmoothHist}!smoothWithKernel@{smoothWithKernel}}
+\index{smoothWithKernel@{smoothWithKernel}!SmoothHist@{SmoothHist}}
+\subsubsection[{smoothWithKernel}]{\setlength{\rightskip}{0pt plus 5cm}TH1 $\ast$ SmoothHist::smoothWithKernel (TH1 $\ast$const  {\em hnom}, \/  TH1 $\ast$const  {\em hsys})}}
+\label{classSmoothHist_af5f8c1ba0805aa4a6ec8ebb85573aa11}
+Alternative method: use kernel fuction to smooth histograms.\par
+ Better to clone sys hist. otherwise original hist might be modified.\par
+ \hypertarget{classSmoothHist_af8d7e0514a1abe58c503548c555134e7}{
+\index{SmoothHist@{SmoothHist}!useRalativeSpans@{useRalativeSpans}}
+\index{useRalativeSpans@{useRalativeSpans}!SmoothHist@{SmoothHist}}
+\subsubsection[{useRalativeSpans}]{\setlength{\rightskip}{0pt plus 5cm}void SmoothHist::useRalativeSpans (bool {\em Rel} = {\ttfamily true})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classSmoothHist_af8d7e0514a1abe58c503548c555134e7}
+This is apply to smoothing with kernel.\par
+ In the default span list, maximum span is 2.\par
+ If you bin width is larger then 2, you should call this fuction.\par
+ 
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+SmoothSystematics/SmoothHist.h\item 
+Root/SmoothHist.cxx\end{DoxyCompactItemize}

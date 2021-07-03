@@ -1,0 +1,14 @@
+# ignore ROOT intermediate files
+*.d
+*.so
+*.pcm
+
+# ignore ROOT files - we do not want them on git
+*.root
+
+# swp and other text editor stuff
+*~
+*.swp
+
+# mysterious file
+.DS_Store
