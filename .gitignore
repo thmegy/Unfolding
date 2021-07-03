@@ -1,0 +1,6 @@
+*.root
+input*
+results/
+*json
+*pdf
+*~
