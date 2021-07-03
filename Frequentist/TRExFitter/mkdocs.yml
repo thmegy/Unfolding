@@ -1,0 +1,81 @@
+site_name: TRExFitter documentation
+site_description: Documentation for TRExFitter
+site_author: TRExFitter team
+site_url: https://trexfitter-docs.web.cern.ch/
+
+repo_name: GitLab
+repo_url: https://gitlab.cern.ch/TRExStats/TRExFitter
+edit_uri: 'tree/master/docs'
+
+theme:
+    name: material
+    palette:
+        primary: 'green'
+        accent: 'green'
+    logo:
+        icon: 'insert_chart'
+    favicon: 'img/favicon.png'
+
+nav:
+    - Introduction: index.md
+
+    - Setup: setup.md
+
+    - Settings: settings.md
+
+    - FAQ: faq.md
+
+    - Tutorials:
+        - Short walkthrough: tutorials/short_walkthrough.md
+        - Unfolding:  tutorials/unfolding.md
+
+    - Model building:
+        - MC statistical uncertainties: model_building/mc_stats.md
+        - Expressions for normalisation factors: model_building/expression.md
+        - Morphing between templates: model_building/morphing.md
+        - Building envelopes: model_building/envelope.md
+        - Force shape by hand: model_building/shape.md
+        - Command line options: model_building/cl_options.md
+
+    - Statistical inference:
+        - Discovery significance: inference/significance.md
+        - Parameter limits: inference/limit.md
+        - Nuisance parameter ranking: inference/ranking.md
+        - Grouped impact for nuisance parameters: inference/grouped_impact.md
+        - Multiple POIs: inference/multi_POI.md
+        - Using Multifit: inference/multifit.md
+
+    - Studying a fit model:
+        - Goodness-of-fit: model_studies/gof.md
+        - Mixed data and MC fits: model_studies/mixed.md
+        - Evaluating compatibility: model_studies/compatibility.md
+        - Removing NP constraints: model_studies/remove_constraint.md
+        - Fixing and injecting NPs: model_studies/injecting_nps.md
+        - Decorrelating systematics: model_studies/decorrelation.md
+
+    - Common fit problems:
+        - Introduction and setup: fit_problems/introduction.md
+        - Problems and solutions: fit_problems/problems.md
+        - Cross-checks of results: fit_problems/checks.md
+
+    - Interfacing other tools:
+        - HEPData format: interfacing_tools/hepdata.md
+        - TRExFitter to pyhf: interfacing_tools/pyhf.md
+        - ServiceX for TRExFitter: interfacing_tools/servicex.md
+
+    - Advanced topics:
+        - Likelihood creation and minimisation: advanced_topics/likelihood.md
+        - Minimisation options: advanced_topics/minimisation.md
+        - Interference treatment: advanced_topics/interference.md
+
+markdown_extensions:
+    - admonition
+    - codehilite
+    - pymdownx.arithmatex
+    - pymdownx.details
+    - pymdownx.inlinehilite
+    - pymdownx.smartsymbols
+    - pymdownx.superfences
+
+extra_javascript:
+    - 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML'

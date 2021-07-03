@@ -1,0 +1,5 @@
+ |       | Background      | Background      | Signal |
+ | Jet Energy Scale | 0.0237147 / -0.0241322 | 0 / 0 | 1.15904 / -0.619537 |
+ | Backgr. 1 Cross-Section | 0.068416 / -0.0687496 | 0 / 0 | 0 / 0 |
+ | Backgr. 2 Cross-Section | 0 / 0 | 0.125157 / -0.132178 | 0 / 0 |
+ | SigXsecOverSM | 0 / 0 | 0 / 0 | 3.65689e+10 / -3.65689e+10 |

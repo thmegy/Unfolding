@@ -1,0 +1,185 @@
+
+[1mRooFit v3.60 -- Developed by Wouter Verkerke and David Kirkby[0m 
+                Copyright (C) 2000-2013 NIKHEF, University of California & Stanford University
+                All rights reserved, please read http://roofit.sourceforge.net/license.txt
+
+                    No rights reserved, feel free to use and modify it ;)
+
+Applying ATLAS style settings...
+
+[1;32m=== INFO::ConfigReaderMulti::ConfigReaderMulti: Started reading the config for multifit[0m
+[1;32m=== INFO::ConfigParser::ReadFile: Reading config file: test/configs/FitExampleMorphMultifit.config[0m
+[1;32m=== INFO::ConfigReader::ConfigReader: Started reading the config[0m
+[1;32m=== INFO::ConfigParser::ReadFile: Reading config file: test/configs/FitExampleMorphing.config[0m
+[1;32m=== INFO::ConfigReader::ConfigReader: Started reading the config[0m
+[1;32m=== INFO::ConfigParser::ReadFile: Reading config file: test/configs/FitExampleMorphingDilep.config[0m
+Fitting combining workspace...
+[#1] INFO:Minization -- p.d.f. provides expected number of events, including extended term in likelihood.
+[#1] INFO:Minization -- createNLL: caching constraint set under name CONSTR_OF_PDF_simPdf_FOR_OBS_channelCat:obs_x_CR_Wmass:obs_x_CR_ll:obs_x_SR_emu:obs_x_SR_lep with 85 entries
+[#1] INFO:Minization --  Including the following constraint terms in minimization: (gamma_shape_stat_Bkg_CR_CR_Wmass_bin_0_constraint,gamma_shape_stat_Bkg_CR_CR_Wmass_bin_1_constraint,gamma_shape_stat_Bkg_CR_CR_Wmass_bin_2_constraint,gamma_shape_stat_Bkg_CR_CR_Wmass_bin_3_constraint,gamma_shape_stat_Bkg_CR_CR_Wmass_bin_4_constraint,gamma_shape_stat_Bkg_CR_CR_Wmass_bin_5_constraint,gamma_shape_stat_Bkg_CR_CR_Wmass_bin_6_constraint,gamma_shape_stat_Bkg_CR_CR_Wmass_bin_7_constraint,gamma_shape_stat_Bkg_CR_CR_Wmass_bin_8_constraint,gamma_shape_stat_Bkg_CR_CR_Wmass_bin_9_constraint,gamma_shape_stat_Bkg_CR_CR_Wmass_bin_10_constraint,gamma_shape_stat_Bkg_CR_CR_Wmass_bin_11_constraint,gamma_shape_stat_Bkg_CR_CR_Wmass_bin_12_constraint,gamma_shape_stat_Bkg_CR_CR_Wmass_bin_13_constraint,gamma_shape_stat_Bkg_CR_CR_Wmass_bin_14_constraint,gamma_shape_stat_Bkg_CR_CR_Wmass_bin_15_constraint,gamma_shape_stat_Bkg_CR_CR_Wmass_bin_16_constraint,gamma_shape_stat_Bkg_CR_CR_Wmass_bin_17_constraint,gamma_shape_stat_Bkg_CR_CR_Wmass_bin_18_constraint,gamma_shape_stat_Bkg_CR_CR_Wmass_bin_19_constraint,gamma_shape_stat_Bkg_CR_CR_Wmass_bin_20_constraint,gamma_shape_stat_Bkg_CR_CR_Wmass_bin_21_constraint,gamma_shape_stat_Bkg_CR_CR_Wmass_bin_22_constraint,gamma_shape_stat_Bkg_CR_CR_Wmass_bin_23_constraint,gamma_shape_stat_Bkg_CR_CR_Wmass_bin_24_constraint,alpha_bTagSF_B_0Constraint,alpha_JET_BJES_ResponseConstraint,gamma_shape_stat_Bkg_CR_CR_ll_bin_0_constraint,gamma_shape_stat_Bkg_CR_CR_ll_bin_1_constraint,gamma_shape_stat_Bkg_CR_CR_ll_bin_2_constraint,gamma_shape_stat_Bkg_CR_CR_ll_bin_4_constraint,gamma_shape_stat_Bkg_CR_CR_ll_bin_6_constraint,gamma_shape_stat_Bkg_CR_CR_ll_bin_7_constraint,gamma_shape_stat_Bkg_CR_CR_ll_bin_9_constraint,gamma_shape_stat_Bkg_CR_CR_ll_bin_10_constraint,gamma_shape_stat_Bkg_CR_CR_ll_bin_11_constraint,gamma_shape_stat_Bkg_CR_CR_ll_bin_12_constraint,gamma_shape_stat_Bkg_CR_CR_ll_bin_13_constraint,gamma_shape_stat_Bkg_CR_CR_ll_bin_14_constraint,gamma_shape_stat_Bkg_CR_CR_ll_bin_15_constraint,gamma_shape_stat_Bkg_CR_CR_ll_bin_16_constraint,gamma_shape_stat_Bkg_CR_CR_ll_bin_17_constraint,gamma_shape_stat_Bkg_CR_CR_ll_bin_18_constraint,gamma_shape_stat_Bkg_SR_SR_emu_bin_0_constraint,gamma_shape_stat_Bkg_SR_SR_emu_bin_1_constraint,gamma_shape_stat_Bkg_SR_SR_emu_bin_2_constraint,gamma_shape_stat_Bkg_SR_SR_emu_bin_3_constraint,gamma_shape_stat_Bkg_SR_SR_emu_bin_4_constraint,gamma_shape_stat_Bkg_SR_SR_emu_bin_5_constraint,gamma_shape_stat_Bkg_SR_SR_emu_bin_6_constraint,gamma_shape_stat_Bkg_SR_SR_emu_bin_7_constraint,gamma_shape_stat_Bkg_SR_SR_emu_bin_8_constraint,gamma_shape_stat_Bkg_SR_SR_emu_bin_9_constraint,gamma_shape_stat_Bkg_SR_SR_emu_bin_10_constraint,gamma_shape_stat_Bkg_SR_SR_emu_bin_11_constraint,gamma_shape_stat_Bkg_SR_SR_emu_bin_12_constraint,gamma_shape_stat_Bkg_SR_SR_emu_bin_14_constraint,gamma_shape_stat_Bkg_SR_SR_emu_bin_15_constraint,gamma_shape_stat_Bkg_SR_SR_emu_bin_17_constraint,gamma_shape_stat_Bkg_SR_SR_emu_bin_18_constraint,gamma_shape_stat_Bkg_SR_SR_lep_bin_0_constraint,gamma_shape_stat_Bkg_SR_SR_lep_bin_1_constraint,gamma_shape_stat_Bkg_SR_SR_lep_bin_2_constraint,gamma_shape_stat_Bkg_SR_SR_lep_bin_3_constraint,gamma_shape_stat_Bkg_SR_SR_lep_bin_4_constraint,gamma_shape_stat_Bkg_SR_SR_lep_bin_5_constraint,gamma_shape_stat_Bkg_SR_SR_lep_bin_6_constraint,gamma_shape_stat_Bkg_SR_SR_lep_bin_7_constraint,gamma_shape_stat_Bkg_SR_SR_lep_bin_8_constraint,gamma_shape_stat_Bkg_SR_SR_lep_bin_9_constraint,gamma_shape_stat_Bkg_SR_SR_lep_bin_10_constraint,gamma_shape_stat_Bkg_SR_SR_lep_bin_11_constraint,gamma_shape_stat_Bkg_SR_SR_lep_bin_12_constraint,gamma_shape_stat_Bkg_SR_SR_lep_bin_13_constraint,gamma_shape_stat_Bkg_SR_SR_lep_bin_14_constraint,gamma_shape_stat_Bkg_SR_SR_lep_bin_15_constraint,gamma_shape_stat_Bkg_SR_SR_lep_bin_16_constraint,gamma_shape_stat_Bkg_SR_SR_lep_bin_17_constraint,gamma_shape_stat_Bkg_SR_SR_lep_bin_18_constraint,gamma_shape_stat_Bkg_SR_SR_lep_bin_19_constraint,gamma_shape_stat_Bkg_SR_SR_lep_bin_20_constraint,gamma_shape_stat_Bkg_SR_SR_lep_bin_21_constraint,gamma_shape_stat_Bkg_SR_SR_lep_bin_22_constraint,gamma_shape_stat_Bkg_SR_SR_lep_bin_23_constraint,gamma_shape_stat_Bkg_SR_SR_lep_bin_24_constraint)
+[#1] INFO:Minization -- The following global observables have been defined: (nom_gamma_shape_stat_Bkg_SR_SR_lep_bin_0,nom_gamma_shape_stat_Bkg_SR_SR_lep_bin_1,nom_gamma_shape_stat_Bkg_SR_SR_lep_bin_2,nom_gamma_shape_stat_Bkg_SR_SR_lep_bin_3,nom_gamma_shape_stat_Bkg_SR_SR_lep_bin_4,nom_gamma_shape_stat_Bkg_SR_SR_lep_bin_5,nom_gamma_shape_stat_Bkg_SR_SR_lep_bin_6,nom_gamma_shape_stat_Bkg_SR_SR_lep_bin_7,nom_gamma_shape_stat_Bkg_SR_SR_lep_bin_8,nom_gamma_shape_stat_Bkg_SR_SR_lep_bin_9,nom_gamma_shape_stat_Bkg_SR_SR_lep_bin_10,nom_gamma_shape_stat_Bkg_SR_SR_lep_bin_11,nom_gamma_shape_stat_Bkg_SR_SR_lep_bin_12,nom_gamma_shape_stat_Bkg_SR_SR_lep_bin_13,nom_gamma_shape_stat_Bkg_SR_SR_lep_bin_14,nom_gamma_shape_stat_Bkg_SR_SR_lep_bin_15,nom_gamma_shape_stat_Bkg_SR_SR_lep_bin_16,nom_gamma_shape_stat_Bkg_SR_SR_lep_bin_17,nom_gamma_shape_stat_Bkg_SR_SR_lep_bin_18,nom_gamma_shape_stat_Bkg_SR_SR_lep_bin_19,nom_gamma_shape_stat_Bkg_SR_SR_lep_bin_20,nom_gamma_shape_stat_Bkg_SR_SR_lep_bin_21,nom_gamma_shape_stat_Bkg_SR_SR_lep_bin_22,nom_gamma_shape_stat_Bkg_SR_SR_lep_bin_23,nom_gamma_shape_stat_Bkg_SR_SR_lep_bin_24,nom_alpha_bTagSF_B_0,nom_alpha_JET_BJES_Response,nom_gamma_stat_SR_lep_bin_0,nom_gamma_stat_SR_lep_bin_1,nom_gamma_stat_SR_lep_bin_2,nom_gamma_stat_SR_lep_bin_3,nom_gamma_stat_SR_lep_bin_4,nom_gamma_stat_SR_lep_bin_5,nom_gamma_stat_SR_lep_bin_6,nom_gamma_stat_SR_lep_bin_7,nom_gamma_stat_SR_lep_bin_8,nom_gamma_stat_SR_lep_bin_9,nom_gamma_stat_SR_lep_bin_10,nom_gamma_stat_SR_lep_bin_11,nom_gamma_stat_SR_lep_bin_12,nom_gamma_stat_SR_lep_bin_13,nom_gamma_stat_SR_lep_bin_14,nom_gamma_stat_SR_lep_bin_15,nom_gamma_stat_SR_lep_bin_16,nom_gamma_stat_SR_lep_bin_17,nom_gamma_stat_SR_lep_bin_18,nom_gamma_stat_SR_lep_bin_19,nom_gamma_stat_SR_lep_bin_20,nom_gamma_stat_SR_lep_bin_21,nom_gamma_stat_SR_lep_bin_22,nom_gamma_stat_SR_lep_bin_23,nom_gamma_stat_SR_lep_bin_24,nom_gamma_shape_stat_Bkg_CR_CR_Wmass_bin_0,nom_gamma_shape_stat_Bkg_CR_CR_Wmass_bin_1,nom_gamma_shape_stat_Bkg_CR_CR_Wmass_bin_2,nom_gamma_shape_stat_Bkg_CR_CR_Wmass_bin_3,nom_gamma_shape_stat_Bkg_CR_CR_Wmass_bin_4,nom_gamma_shape_stat_Bkg_CR_CR_Wmass_bin_5,nom_gamma_shape_stat_Bkg_CR_CR_Wmass_bin_6,nom_gamma_shape_stat_Bkg_CR_CR_Wmass_bin_7,nom_gamma_shape_stat_Bkg_CR_CR_Wmass_bin_8,nom_gamma_shape_stat_Bkg_CR_CR_Wmass_bin_9,nom_gamma_shape_stat_Bkg_CR_CR_Wmass_bin_10,nom_gamma_shape_stat_Bkg_CR_CR_Wmass_bin_11,nom_gamma_shape_stat_Bkg_CR_CR_Wmass_bin_12,nom_gamma_shape_stat_Bkg_CR_CR_Wmass_bin_13,nom_gamma_shape_stat_Bkg_CR_CR_Wmass_bin_14,nom_gamma_shape_stat_Bkg_CR_CR_Wmass_bin_15,nom_gamma_shape_stat_Bkg_CR_CR_Wmass_bin_16,nom_gamma_shape_stat_Bkg_CR_CR_Wmass_bin_17,nom_gamma_shape_stat_Bkg_CR_CR_Wmass_bin_18,nom_gamma_shape_stat_Bkg_CR_CR_Wmass_bin_19,nom_gamma_shape_stat_Bkg_CR_CR_Wmass_bin_20,nom_gamma_shape_stat_Bkg_CR_CR_Wmass_bin_21,nom_gamma_shape_stat_Bkg_CR_CR_Wmass_bin_22,nom_gamma_shape_stat_Bkg_CR_CR_Wmass_bin_23,nom_gamma_shape_stat_Bkg_CR_CR_Wmass_bin_24,nom_gamma_stat_CR_Wmass_bin_0,nom_gamma_stat_CR_Wmass_bin_1,nom_gamma_stat_CR_Wmass_bin_2,nom_gamma_stat_CR_Wmass_bin_3,nom_gamma_stat_CR_Wmass_bin_4,nom_gamma_stat_CR_Wmass_bin_5,nom_gamma_stat_CR_Wmass_bin_6,nom_gamma_stat_CR_Wmass_bin_7,nom_gamma_stat_CR_Wmass_bin_8,nom_gamma_stat_CR_Wmass_bin_9,nom_gamma_stat_CR_Wmass_bin_10,nom_gamma_stat_CR_Wmass_bin_11,nom_gamma_stat_CR_Wmass_bin_12,nom_gamma_stat_CR_Wmass_bin_13,nom_gamma_stat_CR_Wmass_bin_14,nom_gamma_stat_CR_Wmass_bin_15,nom_gamma_stat_CR_Wmass_bin_16,nom_gamma_stat_CR_Wmass_bin_17,nom_gamma_stat_CR_Wmass_bin_18,nom_gamma_stat_CR_Wmass_bin_19,nom_gamma_stat_CR_Wmass_bin_20,nom_gamma_stat_CR_Wmass_bin_21,nom_gamma_stat_CR_Wmass_bin_22,nom_gamma_stat_CR_Wmass_bin_23,nom_gamma_stat_CR_Wmass_bin_24,nom_gamma_shape_stat_Bkg_SR_SR_emu_bin_0,nom_gamma_shape_stat_Bkg_SR_SR_emu_bin_1,nom_gamma_shape_stat_Bkg_SR_SR_emu_bin_2,nom_gamma_shape_stat_Bkg_SR_SR_emu_bin_3,nom_gamma_shape_stat_Bkg_SR_SR_emu_bin_4,nom_gamma_shape_stat_Bkg_SR_SR_emu_bin_5,nom_gamma_shape_stat_Bkg_SR_SR_emu_bin_6,nom_gamma_shape_stat_Bkg_SR_SR_emu_bin_7,nom_gamma_shape_stat_Bkg_SR_SR_emu_bin_8,nom_gamma_shape_stat_Bkg_SR_SR_emu_bin_9,nom_gamma_shape_stat_Bkg_SR_SR_emu_bin_10,nom_gamma_shape_stat_Bkg_SR_SR_emu_bin_11,nom_gamma_shape_stat_Bkg_SR_SR_emu_bin_12,nom_gamma_shape_stat_Bkg_SR_SR_emu_bin_14,nom_gamma_shape_stat_Bkg_SR_SR_emu_bin_15,nom_gamma_shape_stat_Bkg_SR_SR_emu_bin_17,nom_gamma_shape_stat_Bkg_SR_SR_emu_bin_18,nom_gamma_stat_SR_emu_bin_0,nom_gamma_stat_SR_emu_bin_1,nom_gamma_stat_SR_emu_bin_2,nom_gamma_stat_SR_emu_bin_3,nom_gamma_stat_SR_emu_bin_4,nom_gamma_stat_SR_emu_bin_5,nom_gamma_stat_SR_emu_bin_6,nom_gamma_stat_SR_emu_bin_7,nom_gamma_stat_SR_emu_bin_8,nom_gamma_stat_SR_emu_bin_9,nom_gamma_stat_SR_emu_bin_10,nom_gamma_stat_SR_emu_bin_11,nom_gamma_stat_SR_emu_bin_12,nom_gamma_stat_SR_emu_bin_13,nom_gamma_stat_SR_emu_bin_14,nom_gamma_stat_SR_emu_bin_15,nom_gamma_stat_SR_emu_bin_16,nom_gamma_stat_SR_emu_bin_17,nom_gamma_stat_SR_emu_bin_18,nom_gamma_stat_SR_emu_bin_19,nom_gamma_shape_stat_Bkg_CR_CR_ll_bin_0,nom_gamma_shape_stat_Bkg_CR_CR_ll_bin_1,nom_gamma_shape_stat_Bkg_CR_CR_ll_bin_2,nom_gamma_shape_stat_Bkg_CR_CR_ll_bin_4,nom_gamma_shape_stat_Bkg_CR_CR_ll_bin_6,nom_gamma_shape_stat_Bkg_CR_CR_ll_bin_7,nom_gamma_shape_stat_Bkg_CR_CR_ll_bin_9,nom_gamma_shape_stat_Bkg_CR_CR_ll_bin_10,nom_gamma_shape_stat_Bkg_CR_CR_ll_bin_11,nom_gamma_shape_stat_Bkg_CR_CR_ll_bin_12,nom_gamma_shape_stat_Bkg_CR_CR_ll_bin_13,nom_gamma_shape_stat_Bkg_CR_CR_ll_bin_14,nom_gamma_shape_stat_Bkg_CR_CR_ll_bin_15,nom_gamma_shape_stat_Bkg_CR_CR_ll_bin_16,nom_gamma_shape_stat_Bkg_CR_CR_ll_bin_17,nom_gamma_shape_stat_Bkg_CR_CR_ll_bin_18,nom_gamma_stat_CR_ll_bin_0,nom_gamma_stat_CR_ll_bin_1,nom_gamma_stat_CR_ll_bin_2,nom_gamma_stat_CR_ll_bin_3,nom_gamma_stat_CR_ll_bin_4,nom_gamma_stat_CR_ll_bin_5,nom_gamma_stat_CR_ll_bin_6,nom_gamma_stat_CR_ll_bin_7,nom_gamma_stat_CR_ll_bin_8,nom_gamma_stat_CR_ll_bin_9,nom_gamma_stat_CR_ll_bin_10,nom_gamma_stat_CR_ll_bin_11,nom_gamma_stat_CR_ll_bin_12,nom_gamma_stat_CR_ll_bin_13,nom_gamma_stat_CR_ll_bin_14,nom_gamma_stat_CR_ll_bin_15,nom_gamma_stat_CR_ll_bin_16,nom_gamma_stat_CR_ll_bin_17,nom_gamma_stat_CR_ll_bin_18,nom_gamma_stat_CR_ll_bin_19)
+RooAbsTestStatistic::initSimMode: creating slave calculator #0 for state SR_lep (25 dataset entries)
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(SR_lep_model_Int[obs_x_SR_lep]) using numeric integrator RooBinIntegrator to calculate Int(obs_x_SR_lep)
+RooAbsTestStatistic::initSimMode: creating slave calculator #1 for state CR_Wmass (25 dataset entries)
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(CR_Wmass_model_Int[obs_x_CR_Wmass]) using numeric integrator RooBinIntegrator to calculate Int(obs_x_CR_Wmass)
+RooAbsTestStatistic::initSimMode: creating slave calculator #2 for state SR_emu (20 dataset entries)
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(SR_emu_model_Int[obs_x_SR_emu]) using numeric integrator RooBinIntegrator to calculate Int(obs_x_SR_emu)
+RooAbsTestStatistic::initSimMode: creating slave calculator #3 for state CR_ll (20 dataset entries)
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(CR_ll_model_Int[obs_x_CR_ll]) using numeric integrator RooBinIntegrator to calculate Int(obs_x_CR_ll)
+[#1] INFO:Fitting -- RooAbsTestStatistic::initSimMode: created 4 slave calculators.
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(SR_lep_model_Int[obs_x_SR_lep]) using numeric integrator RooBinIntegrator to calculate Int(obs_x_SR_lep)
+[#1] INFO:Minization --  A total of 22 expressions have been identified as constant and will be precalculated and cached.
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(CR_Wmass_model_Int[obs_x_CR_Wmass]) using numeric integrator RooBinIntegrator to calculate Int(obs_x_CR_Wmass)
+[#1] INFO:Minization --  The following expressions have been identified as constant and will be precalculated and cached: (Bkg_CR_CR_Wmass_overallSyst_x_Exp,mc_stat_CR_Wmass,Control_Wmass_CR_Wmass_Hist_alphanominal,Control_Wmass_CR_Wmass_Hist_alpha_0low,Control_Wmass_CR_Wmass_Hist_alpha_1low,Control_Wmass_CR_Wmass_Hist_alpha_0high,Control_Wmass_CR_Wmass_Hist_alpha_1high)
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(SR_emu_model_Int[obs_x_SR_emu]) using numeric integrator RooBinIntegrator to calculate Int(obs_x_SR_emu)
+[#1] INFO:Minization --  The following expressions have been identified as constant and will be precalculated and cached: (Bkg_SR_SR_emu_overallSyst_x_Exp,mc_stat_SR_emu,Signal_0p7_SR_emu_Hist_alphanominal,Signal_0p7_SR_emu_Hist_alpha_0low,Signal_0p7_SR_emu_Hist_alpha_0high,Signal_1p0_SR_emu_Hist_alphanominal,Signal_1p0_SR_emu_Hist_alpha_0low,Signal_1p0_SR_emu_Hist_alpha_0high,Signal_1p5_SR_emu_Hist_alphanominal,Signal_1p5_SR_emu_Hist_alpha_0low,Signal_1p5_SR_emu_Hist_alpha_0high,Signal_2p0_SR_emu_Hist_alphanominal,Signal_2p0_SR_emu_Hist_alpha_0low,Signal_2p0_SR_emu_Hist_alpha_0high)
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(CR_ll_model_Int[obs_x_CR_ll]) using numeric integrator RooBinIntegrator to calculate Int(obs_x_CR_ll)
+[#1] INFO:Minization --  The following expressions have been identified as constant and will be precalculated and cached: (Bkg_CR_CR_ll_overallSyst_x_Exp,mc_stat_CR_ll,Control_mbb_CR_ll_Hist_alphanominal,Control_mbb_CR_ll_Hist_alpha_0low,Control_mbb_CR_ll_Hist_alpha_0high)
+[1;32m=== INFO::FittingTool::FitPDF: POI: topWidth[0m
+[1;32m=== INFO::FittingTool::FitPDF:    -> Constant POI : 0[0m
+[1;32m=== INFO::FittingTool::FitPDF:    -> Initial value of POI : 1.320000[0m
+[#1] INFO:Minization -- RooNLLVar::evaluatePartition(SR_lep) first = 0 last = 25 Likelihood offset now set to -1.35245e+07
+[#1] INFO:Minization -- RooNLLVar::evaluatePartition(CR_Wmass) first = 0 last = 25 Likelihood offset now set to -1.39195e+07
+[#1] INFO:Minization -- RooNLLVar::evaluatePartition(SR_emu) first = 0 last = 20 Likelihood offset now set to -3.4074e+06
+[#1] INFO:Minization -- RooNLLVar::evaluatePartition(CR_ll) first = 0 last = 20 Likelihood offset now set to -1.76275e+06
+[#1] INFO:Fitting -- RooAddition::defaultErrorLevel(nll_simPdf_obsData_with_constr) Summation contains a RooNLLVar, using its error level
+[#1] INFO:Minization -- RooMinimizer::optimizeConst: activating const optimization
+[1;32m=== INFO::FittingTool::FitPDF: [0m
+[1;32m=== INFO::FittingTool::FitPDF: [0m
+[1;32m=== INFO::FittingTool::FitPDF: [0m
+[1;32m=== INFO::FittingTool::FitPDF: Fit try no.1[0m
+[1;32m=== INFO::FittingTool::FitPDF: ======================[0m
+[1;32m=== INFO::FittingTool::FitPDF: [0m
+Minuit2Minimizer: Minimize with max-calls 43500 convergence for edm < 0.01 strategy 1
+Minuit2Minimizer : Valid minimum - status = 0
+FVAL  = 336.158140519726658
+Edm   = 2.07109260004982185e-06
+Nfcn  = 4935
+alpha_JET_BJES_Response	  = 0.00138288	 +/-  0.122321	(limited)
+alpha_bTagSF_B_0	  = -0.000214393	 +/-  0.182947	(limited)
+gamma_shape_stat_Bkg_CR_CR_Wmass_bin_0	  = 0.999991	 +/-  0.138445	(limited)
+gamma_shape_stat_Bkg_CR_CR_Wmass_bin_1	  = 0.999993	 +/-  0.179298	(limited)
+gamma_shape_stat_Bkg_CR_CR_Wmass_bin_10	  = 0.999997	 +/-  0.0359388	(limited)
+gamma_shape_stat_Bkg_CR_CR_Wmass_bin_11	  = 0.999997	 +/-  0.0334438	(limited)
+gamma_shape_stat_Bkg_CR_CR_Wmass_bin_12	  = 0.999997	 +/-  0.0331727	(limited)
+gamma_shape_stat_Bkg_CR_CR_Wmass_bin_13	  = 0.999997	 +/-  0.0323653	(limited)
+gamma_shape_stat_Bkg_CR_CR_Wmass_bin_14	  = 0.999997	 +/-  0.0336924	(limited)
+gamma_shape_stat_Bkg_CR_CR_Wmass_bin_15	  = 0.999997	 +/-  0.0344934	(limited)
+gamma_shape_stat_Bkg_CR_CR_Wmass_bin_16	  = 0.999997	 +/-  0.0352691	(limited)
+gamma_shape_stat_Bkg_CR_CR_Wmass_bin_17	  = 0.999997	 +/-  0.0389755	(limited)
+gamma_shape_stat_Bkg_CR_CR_Wmass_bin_18	  = 0.999998	 +/-  0.0400625	(limited)
+gamma_shape_stat_Bkg_CR_CR_Wmass_bin_19	  = 0.999999	 +/-  0.0435069	(limited)
+gamma_shape_stat_Bkg_CR_CR_Wmass_bin_2	  = 0.999996	 +/-  0.0781802	(limited)
+gamma_shape_stat_Bkg_CR_CR_Wmass_bin_20	  = 1	 +/-  0.0473761	(limited)
+gamma_shape_stat_Bkg_CR_CR_Wmass_bin_21	  = 1	 +/-  0.050656	(limited)
+gamma_shape_stat_Bkg_CR_CR_Wmass_bin_22	  = 1	 +/-  0.0560698	(limited)
+gamma_shape_stat_Bkg_CR_CR_Wmass_bin_23	  = 1	 +/-  0.0645285	(limited)
+gamma_shape_stat_Bkg_CR_CR_Wmass_bin_24	  = 1	 +/-  0.0452951	(limited)
+gamma_shape_stat_Bkg_CR_CR_Wmass_bin_3	  = 0.999997	 +/-  0.0606541	(limited)
+gamma_shape_stat_Bkg_CR_CR_Wmass_bin_4	  = 0.999997	 +/-  0.0468661	(limited)
+gamma_shape_stat_Bkg_CR_CR_Wmass_bin_5	  = 0.999998	 +/-  0.0412669	(limited)
+gamma_shape_stat_Bkg_CR_CR_Wmass_bin_6	  = 0.999998	 +/-  0.0378501	(limited)
+gamma_shape_stat_Bkg_CR_CR_Wmass_bin_7	  = 0.999997	 +/-  0.036718	(limited)
+gamma_shape_stat_Bkg_CR_CR_Wmass_bin_8	  = 0.999997	 +/-  0.0362465	(limited)
+gamma_shape_stat_Bkg_CR_CR_Wmass_bin_9	  = 0.999997	 +/-  0.0345599	(limited)
+gamma_shape_stat_Bkg_CR_CR_ll_bin_0	  = 1	 +/-  0.0461144	(limited)
+gamma_shape_stat_Bkg_CR_CR_ll_bin_1	  = 1	 +/-  0.0504477	(limited)
+gamma_shape_stat_Bkg_CR_CR_ll_bin_10	  = 1	 +/-  0.0390959	(limited)
+gamma_shape_stat_Bkg_CR_CR_ll_bin_11	  = 1	 +/-  0.033259	(limited)
+gamma_shape_stat_Bkg_CR_CR_ll_bin_12	  = 1	 +/-  0.0393762	(limited)
+gamma_shape_stat_Bkg_CR_CR_ll_bin_13	  = 1	 +/-  0.0360095	(limited)
+gamma_shape_stat_Bkg_CR_CR_ll_bin_14	  = 1	 +/-  0.0487328	(limited)
+gamma_shape_stat_Bkg_CR_CR_ll_bin_15	  = 1	 +/-  0.0448692	(limited)
+gamma_shape_stat_Bkg_CR_CR_ll_bin_16	  = 1	 +/-  0.0546309	(limited)
+gamma_shape_stat_Bkg_CR_CR_ll_bin_17	  = 1	 +/-  0.0503625	(limited)
+gamma_shape_stat_Bkg_CR_CR_ll_bin_18	  = 1	 +/-  0.0656821	(limited)
+gamma_shape_stat_Bkg_CR_CR_ll_bin_2	  = 1	 +/-  0.0316947	(limited)
+gamma_shape_stat_Bkg_CR_CR_ll_bin_4	  = 1	 +/-  0.0401724	(limited)
+gamma_shape_stat_Bkg_CR_CR_ll_bin_6	  = 1	 +/-  0.0331126	(limited)
+gamma_shape_stat_Bkg_CR_CR_ll_bin_7	  = 1	 +/-  0.0375084	(limited)
+gamma_shape_stat_Bkg_CR_CR_ll_bin_9	  = 1	 +/-  0.0526303	(limited)
+gamma_shape_stat_Bkg_SR_SR_emu_bin_0	  = 0.999957	 +/-  0.203204	(limited)
+gamma_shape_stat_Bkg_SR_SR_emu_bin_1	  = 1	 +/-  0.0780602	(limited)
+gamma_shape_stat_Bkg_SR_SR_emu_bin_10	  = 1	 +/-  0.0358395	(limited)
+gamma_shape_stat_Bkg_SR_SR_emu_bin_11	  = 1	 +/-  0.0335972	(limited)
+gamma_shape_stat_Bkg_SR_SR_emu_bin_12	  = 1	 +/-  0.0353309	(limited)
+gamma_shape_stat_Bkg_SR_SR_emu_bin_14	  = 1	 +/-  0.0338484	(limited)
+gamma_shape_stat_Bkg_SR_SR_emu_bin_15	  = 0.999998	 +/-  0.0299824	(limited)
+gamma_shape_stat_Bkg_SR_SR_emu_bin_17	  = 0.999999	 +/-  0.0308245	(limited)
+gamma_shape_stat_Bkg_SR_SR_emu_bin_18	  = 1	 +/-  0.030618	(limited)
+gamma_shape_stat_Bkg_SR_SR_emu_bin_2	  = 0.999994	 +/-  0.0617363	(limited)
+gamma_shape_stat_Bkg_SR_SR_emu_bin_3	  = 0.999998	 +/-  0.0480403	(limited)
+gamma_shape_stat_Bkg_SR_SR_emu_bin_4	  = 0.999996	 +/-  0.0513405	(limited)
+gamma_shape_stat_Bkg_SR_SR_emu_bin_5	  = 0.999998	 +/-  0.0532287	(limited)
+gamma_shape_stat_Bkg_SR_SR_emu_bin_6	  = 0.999996	 +/-  0.0381956	(limited)
+gamma_shape_stat_Bkg_SR_SR_emu_bin_7	  = 1	 +/-  0.0381426	(limited)
+gamma_shape_stat_Bkg_SR_SR_emu_bin_8	  = 1	 +/-  0.0346748	(limited)
+gamma_shape_stat_Bkg_SR_SR_emu_bin_9	  = 1	 +/-  0.041201	(limited)
+gamma_shape_stat_Bkg_SR_SR_lep_bin_0	  = 0.999921	 +/-  0.0676645	(limited)
+gamma_shape_stat_Bkg_SR_SR_lep_bin_1	  = 0.999947	 +/-  0.0523169	(limited)
+gamma_shape_stat_Bkg_SR_SR_lep_bin_10	  = 1.00001	 +/-  0.0319019	(limited)
+gamma_shape_stat_Bkg_SR_SR_lep_bin_11	  = 0.999985	 +/-  0.0315605	(limited)
+gamma_shape_stat_Bkg_SR_SR_lep_bin_12	  = 0.999983	 +/-  0.0317547	(limited)
+gamma_shape_stat_Bkg_SR_SR_lep_bin_13	  = 1	 +/-  0.0326841	(limited)
+gamma_shape_stat_Bkg_SR_SR_lep_bin_14	  = 0.999973	 +/-  0.0345833	(limited)
+gamma_shape_stat_Bkg_SR_SR_lep_bin_15	  = 0.999956	 +/-  0.0342919	(limited)
+gamma_shape_stat_Bkg_SR_SR_lep_bin_16	  = 1.00004	 +/-  0.0377367	(limited)
+gamma_shape_stat_Bkg_SR_SR_lep_bin_17	  = 1.00001	 +/-  0.0426075	(limited)
+gamma_shape_stat_Bkg_SR_SR_lep_bin_18	  = 1.00005	 +/-  0.0474155	(limited)
+gamma_shape_stat_Bkg_SR_SR_lep_bin_19	  = 1.00004	 +/-  0.0496209	(limited)
+gamma_shape_stat_Bkg_SR_SR_lep_bin_2	  = 1.00001	 +/-  0.0453856	(limited)
+gamma_shape_stat_Bkg_SR_SR_lep_bin_20	  = 0.999968	 +/-  0.0565787	(limited)
+gamma_shape_stat_Bkg_SR_SR_lep_bin_21	  = 1.00001	 +/-  0.0567378	(limited)
+gamma_shape_stat_Bkg_SR_SR_lep_bin_22	  = 1	 +/-  0.0584827	(limited)
+gamma_shape_stat_Bkg_SR_SR_lep_bin_23	  = 1.00004	 +/-  0.0709242	(limited)
+gamma_shape_stat_Bkg_SR_SR_lep_bin_24	  = 1.00003	 +/-  0.0865788	(limited)
+gamma_shape_stat_Bkg_SR_SR_lep_bin_3	  = 0.999981	 +/-  0.0419831	(limited)
+gamma_shape_stat_Bkg_SR_SR_lep_bin_4	  = 0.999985	 +/-  0.0390203	(limited)
+gamma_shape_stat_Bkg_SR_SR_lep_bin_5	  = 0.99995	 +/-  0.0388258	(limited)
+gamma_shape_stat_Bkg_SR_SR_lep_bin_6	  = 1.00003	 +/-  0.0357245	(limited)
+gamma_shape_stat_Bkg_SR_SR_lep_bin_7	  = 1	 +/-  0.0354318	(limited)
+gamma_shape_stat_Bkg_SR_SR_lep_bin_8	  = 0.99998	 +/-  0.0319931	(limited)
+gamma_shape_stat_Bkg_SR_SR_lep_bin_9	  = 0.999978	 +/-  0.031401	(limited)
+topWidth	  = 1.32171	 +/-  0.121363	(limited)
+ttbarXsec	  = 0.999996	 +/-  0.00441394	(limited)
+Minuit2Minimizer::Hesse using max-calls 43500
+Info in Minuit2Minimizer::Hesse : Hesse is valid - matrix is accurate
+Minuit2Minimizer::GetMinosError for parameter 85  topWidth using max-calls 43500, tolerance 0.01
+[1;32m=== INFO::FittingTool::FitPDF: [0m
+[1;32m=== INFO::FittingTool::FitPDF: [0m
+[1;32m=== INFO::FittingTool::FitPDF: [0m
+[1;32m=== INFO::FittingTool::FitPDF: ***********************************************************[0m
+[1;32m=== INFO::FittingTool::FitPDF:          FIT FINALIZED SUCCESSFULLY : [0m
+[1;32m=== INFO::FittingTool::FitPDF:             - minuit status 0[0m
+[1;32m=== INFO::FittingTool::FitPDF:             - hess status 0[0m
+[1;32m=== INFO::FittingTool::FitPDF:             - Edm = 0.000002[0m
+[1;32m=== INFO::FittingTool::FitPDF: ***********************************************************[0m
+[1;32m=== INFO::FittingTool::FitPDF: [0m
+[1;32m=== INFO::FittingTool::FitPDF: [0m
+[1;32m=== INFO::FittingTool::FitPDF: [0m
+[1;32m=== INFO::FittingTool::FitPDF: ***********************************************************[0m
+[1;32m=== INFO::FittingTool::FitPDF:   Final value of the NLL = -32613806.488443[0m
+[1;32m=== INFO::FittingTool::FitPDF: ***********************************************************[0m
+Comparing fits...
+[1;32m=== INFO::MultiFit::ComparePulls: Adding Combined Fit[0m
+[1;32m=== INFO::TRExFit::ReadFitResults: ------------------------------------------------------[0m
+[1;32m=== INFO::TRExFit::ReadFitResults: Reading fit results from file [0m
+[1;32m=== INFO::TRExFit::ReadFitResults: ------------------------------------------------------[0m
+[1;32m=== INFO::TRExFit::ReadFitResults: Reading fit results from file [0m
+[1;32m=== INFO::MultiFit::CompareNormFactors: Adding Combined Fit[0m
+[1;32m=== INFO::TRExFit::ReadFitResults: ------------------------------------------------------[0m
+[1;32m=== INFO::TRExFit::ReadFitResults: Reading fit results from file [0m
+[1;32m=== INFO::TRExFit::ReadFitResults: ------------------------------------------------------[0m
+[1;32m=== INFO::TRExFit::ReadFitResults: Reading fit results from file [0m
+[1;32m=== INFO::TRExFit::ReadFitResults: ------------------------------------------------------[0m
+[1;32m=== INFO::TRExFit::ReadFitResults: Reading fit results from file [0m
+[1;32m=== INFO::YamlConverter::Write: Writing correlation yaml file to: ./FitExampleMorphMultifit/CorrelationMatrix.yaml[0m
+[1;32m=== INFO::MultiFit::ComparePOI: Adding Fit: FitExampleMorphing, SingleLep, [0m
+[1;32m=== INFO::MultiFit::ComparePOI: Adding Fit: FitExampleMorphingDilep, Dilep, [0m
+[1;32m=== INFO::MultiFit::ComparePOI: Adding Combined Fit[0m
+[1;32m=== INFO::TRExFit::ReadFitResults: ------------------------------------------------------[0m
+[1;32m=== INFO::TRExFit::ReadFitResults: Reading fit results from file [0m
+[1;32m=== INFO::TRExFit::ReadFitResults: ------------------------------------------------------[0m
+[1;32m=== INFO::TRExFit::ReadFitResults: Reading fit results from file [0m
+[1;32m=== INFO::TRExFit::ReadFitResults: ------------------------------------------------------[0m
+[1;32m=== INFO::TRExFit::ReadFitResults: Reading fit results from file [0m
